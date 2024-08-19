@@ -15,33 +15,33 @@
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
 
-// var M_mass;
-// var M_height;
-// var J_mass;
-// var J_height;
-// const BMI = (mass, height) => mass / (height * height);
-// var markHigherBMI;
+var M_mass;
+var M_height;
+var J_mass;
+var J_height;
+const BMI = (mass, height) => mass / (height * height);
+var markHigherBMI;
 
-// // TH1
-// M_mass = 78;
-// M_height = 1.69;
-// J_mass = 92;
-// J_height = 1.95;
+// TH1
+M_mass = 78;
+M_height = 1.69;
+J_mass = 92;
+J_height = 1.95;
 
-// var BMI_M = BMI(M_mass, M_height);
-// var BMI_J = BMI(J_mass, J_height);
+var BMI_M = BMI(M_mass, M_height);
+var BMI_J = BMI(J_mass, J_height);
 
-// console.log(markHigherBMI = BMI_M > BMI_J);
+console.log(markHigherBMI = BMI_M > BMI_J);
 
 // // TH2
-// M_mass = 95;
-// M_height = 1.88;
-// J_mass = 85;
-// J_height = 1.76;
+M_mass = 95;
+M_height = 1.88;
+J_mass = 85;
+J_height = 1.76;
 
-// BMI_M = BMI(M_mass, M_height);
-// BMI_J = BMI(J_mass, J_height);
-// console.log(markHigherBMI = BMI_M > BMI_J);
+BMI_M = BMI(M_mass, M_height);
+BMI_J = BMI(J_mass, J_height);
+console.log(markHigherBMI = BMI_M > BMI_J);
 
 
 // Coding Challenge #2
@@ -54,12 +54,12 @@
 // BMI (28.3) is higher than John's (23.9)!"
 // Hint: Use an if/else statement �
 
-// if (BMI_M > BMI_J) {
-//     console.log(`Mark's BMI (${BMI_M.toFixed(2)}) is higher than John's (${BMI_J.toFixed(2)})!`);
-// }
-// else {
-//     console.log(`John's BMI (${BMI_J.toFixed(2)}) is higher than Mark's (${BMI_M.toFixed(2)})!`);
-// }
+if (BMI_M > BMI_J) {
+    console.log(`Mark's BMI (${BMI_M.toFixed(2)}) is higher than John's (${BMI_J.toFixed(2)})!`);
+}
+else {
+    console.log(`John's BMI (${BMI_J.toFixed(2)}) is higher than Mark's (${BMI_M.toFixed(2)})!`);
+}
 
 // Coding Challenge #3
 // There are two gymnastics teams, Dolphins and Koalas.They compete against each
@@ -81,20 +81,20 @@
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-// var D_array = [96, 108, 89];
-// var K_array = [88, 91, 110];
-// var D_sum = 0;
-// var K_sum = 0;
+var D_array = [96, 108, 89];
+var K_array = [88, 91, 110];
+var D_sum = 0;
+var K_sum = 0;
 
-// for (let i = 0; i < D_array.length; i++) {
-//     D_sum += D_array[i];
-// }
-// console.log(`Trung bình điểm của Dolphins: ${D_avg = D_sum / D_array.length}`);
+for (let i = 0; i < D_array.length; i++) {
+    D_sum += D_array[i];
+}
+console.log(`Trung bình điểm của Dolphins: ${D_avg = D_sum / D_array.length}`);
 
-// for (let i = 0; i < K_array.length; i++) {
-//     K_sum += K_array[i];
-// }
-// console.log(`Trung bình điểm của Koalas: ${K_avg = K_sum / K_array.length}`);
+for (let i = 0; i < K_array.length; i++) {
+    K_sum += K_array[i];
+}
+console.log(`Trung bình điểm của Koalas: ${K_avg = K_sum / K_array.length}`);
 
 // Coding Challenge #4
 // Steven wants to build a very simple tip calculator for whenever he goes eating in a
@@ -116,22 +116,22 @@
 
 // console.log("Coding Challenge #4");
 
-// var tip;
-// var bill;
+var tip;
+var bill;
 
-// calcTip = (bill) => {
-//     if (bill >= 50 && bill <= 300) {
-//         tip = bill * 0.15;
-//     }
-//     else {
-//         tip = bill * 0.2;
-//     }
-// }
-// bill = [275, 40, 430];
-// for (let i = 0; i < bill.length; i++) {
-//     calcTip(bill[i]);
-//     console.log(`The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}`);
-// }
+calcTip = (bill) => {
+    if (bill >= 50 && bill <= 300) {
+        tip = bill * 0.15;
+    }
+    else {
+        tip = bill * 0.2;
+    }
+}
+bill = [275, 40, 430];
+for (let i = 0; i < bill.length; i++) {
+    calcTip(bill[i]);
+    console.log(`The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}`);
+}
 
 // JavaScript Fundamentals Part 2
 
@@ -161,16 +161,16 @@
 // Apply this to the team's average scores �
 
 // Code challenge #1
-// D_array = [44, 23, 71];
-// K_array = [65, 54, 49];
-// calcAverage = (array) => {
-//     sum = 0;
-//     avg = 0;
-//     for (let i = 0; i < array.length; i++) {
-//         sum += array[i];
-//     }
-//     return avg = sum / array.length;
-// };
+D_array = [44, 23, 71];
+K_array = [65, 54, 49];
+calcAverage = (array) => {
+    sum = 0;
+    avg = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return avg = sum / array.length;
+};
 
 // sử dụng reduce
 // calcAverage = (array) => {
@@ -178,22 +178,22 @@
 //     return sum / array.length;
 // };
 
-// console.log(calcAverage(D_array));
-// console.log(calcAverage(K_array));
+console.log(calcAverage(D_array));
+console.log(calcAverage(K_array));
 
-// checkWinner = (a, b) => {
-//     if (a >= 2 * b) {
-//         console.log(`Dolphins win (${a} vs. ${b})`);
-//     }
-//     else if (b >= 2 * a) {
-//         console.log(`Koalas win (${b} vs. ${a})`);
-//     }
-//     else {
-//         console.log("No team wins!");
-//     }
-// }
+checkWinner = (a, b) => {
+    if (a >= 2 * b) {
+        console.log(`Dolphins win (${a} vs. ${b})`);
+    }
+    else if (b >= 2 * a) {
+        console.log(`Koalas win (${b} vs. ${a})`);
+    }
+    else {
+        console.log("No team wins!");
+    }
+}
 
-// checkWinner(calcAverage(D_array), calcAverage(K_array));
+checkWinner(calcAverage(D_array), calcAverage(K_array));
 
 
 // Coding Challenge #2
@@ -216,24 +216,24 @@
 // values (so don't store the tip values in separate variables first, but right in the new
 // array) �
 
-// bills = [125, 555, 44];
-// calcTip = (bill) => {
-//     if (bill >= 50 && bill <= 300) {
-//         return bill * 0.15;
-//     }
-//     else {
-//         return bill * 0.2;
-//     }
-// }
+var bills = [125, 555, 44];
+calcTip = (bill) => {
+    if (bill >= 50 && bill <= 300) {
+        return bill * 0.15;
+    }
+    else {
+        return bill * 0.2;
+    }
+}
 
-// console.log(`Tiền tip khi gia tri bill la 100: ${calcTip(100)}`);
+console.log(`Tiền tip khi gia tri bill la 100: ${calcTip(100)}`);
 
-// tips = bills.map(bill => calcTip(bill));
-// console.log(`Danh sách tiền tip: ${tips}`);
+tips = bills.map(bill => calcTip(bill));
+console.log(`Danh sách tiền tip: ${tips}`);
 
-// total = bills.map((bill) => bill + calcTip(bill));
-// // total = bills.map((bill, index) => bill + tips[index]);
-// console.log(`Danh sách tổng tiền: ${total}`);
+total = bills.map((bill) => bill + calcTip(bill));
+// total = bills.map((bill, index) => bill + tips[index]);
+console.log(`Danh sách tổng tiền: ${total}`);
 
 // Coding Challenge #3
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
@@ -250,32 +250,32 @@
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 // tall.
 
-// const Mark = {
-//     fullName: 'Mark Miller',
-//     mass: 78,
-//     height: 1.69,
-//     calcBMI: function () {
-//         this.BMI = this.mass / (this.height ** 2);
-//         return this.BMI;
-//     }
-// }
+const Mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height ** 2);
+        return this.BMI;
+    }
+}
 
-// const John = {
-//     fullName: 'John Smith',
-//     mass: 92,
-//     height: 1.95,
-//     calcBMI: function () {
-//         this.BMI = this.mass / (this.height ** 2);
-//         return this.BMI;
-//     }
-// }
+const John = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height ** 2);
+        return this.BMI;
+    }
+}
 
-// if (Mark.calcBMI() > John.calcBMI()) {
-//     console.log(`Chỉ số BMI của ${Mark.fullName} (${Mark.calcBMI().toFixed(2)}) cao hơn so với của ${John.fullName} (${John.calcBMI().toFixed(2)})!`);
-// }
-// else {
-//     console.log(`Chỉ số BMI của ${Mark.fullName} (${Mark.calcBMI().toFixed(2)}) nhỏ hơn so với của ${John.fullName} (${John.calcBMI().toFixed(2)})!`);
-// }
+if (Mark.calcBMI() > John.calcBMI()) {
+    console.log(`Chỉ số BMI của ${Mark.fullName} (${Mark.calcBMI().toFixed(2)}) cao hơn so với của ${John.fullName} (${John.calcBMI().toFixed(2)})!`);
+}
+else {
+    console.log(`Chỉ số BMI của ${Mark.fullName} (${Mark.calcBMI().toFixed(2)}) nhỏ hơn so với của ${John.fullName} (${John.calcBMI().toFixed(2)})!`);
+}
 
 // Coding Challenge #4
 // Let's improve Steven's tip calculator even more, this time using loops!
