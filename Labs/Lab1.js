@@ -170,4 +170,29 @@ calcAverage = (array) => {
         sum += array[i];
     }
     return avg = sum / array.length;
-}; 
+};
+
+// sử dụng reduce
+// calcAverage = (array) => {
+//     sum = array.reduce((acc, cur) => acc + cur, 0);
+//     return sum / array.length;
+// };
+
+console.log(calcAverage(D_array));
+console.log(calcAverage(K_array));
+
+checkWinner = (a, b) => {
+    if (a >= 2 * b) {
+        console.log(`Dolphins win (${a} vs. ${b})`);
+    }
+    else if (b >= 2 * a) {
+        console.log(`Koalas win (${b} vs. ${a})`);
+    }
+    else {
+        console.log("No team wins!");
+    }
+}
+
+checkWinner(calcAverage(D_array), calcAverage(K_array));
+
+
