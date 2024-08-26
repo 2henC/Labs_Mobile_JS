@@ -15,3 +15,22 @@
 // Test data:
 // § Data 1: [5, 2, 4, 1, 15, 8, 3]
 // § Data 2: [16, 6, 10, 5, 6, 1, 4]
+
+data1 = [5, 2, 4, 1, 15, 8, 3];
+
+const calcAverageHumanAge = (ages) => {
+  const humanAges = ages.map(age => {
+    let humanAge;
+    if (age <= 2) humanAge = 2 * age;
+    else humanAge = 16 + age * 4;
+    return humanAge;
+  });
+
+  const adultAges = humanAges.filter(age => age >= 18);
+  const averageAge = adultAges.reduce((sum, age) => sum + age, 0) / adultAges.length;
+
+  return averageAge;
+}
+
+console.log(calcAverageHumanAge(data1));
+
