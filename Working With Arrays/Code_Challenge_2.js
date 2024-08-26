@@ -18,7 +18,7 @@
 
 data1 = [5, 2, 4, 1, 15, 8, 3];
 
-const calcAverageHumanAge = (ages) => {
+const calcAverageHumanAge = function (ages) {
   const humanAges = ages.map(age => {
     let humanAge;
     if (age <= 2) humanAge = 2 * age;
