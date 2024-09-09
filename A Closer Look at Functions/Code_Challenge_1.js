@@ -33,3 +33,8 @@
 // § Data 1: [5, 2, 3]
 // § Data 2: [1, 5, 3, 9, 6, 1]
 // Hints: Use many of the tools you learned about in this and the last section
+
+const poll = {}
+const registerNewAnswer = () => {
+
+}
