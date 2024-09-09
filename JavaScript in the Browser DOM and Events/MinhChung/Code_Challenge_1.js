@@ -7,4 +7,3 @@
 // 3. Restore the initial conditions of the message, number, score and guess input
 // fields
 // 4. Also restore the original background color (#222) and number width (15rem)
-
