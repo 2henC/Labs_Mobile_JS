@@ -41,8 +41,9 @@ const ThongTinSach = ({ tenSach, nhaCungCap, giaCu, giaMoi }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
-    gap: 20
+    gap: 20,
+    marginTop: 10,
+    backgroundColor: 'white'
   },
   text: {
     fontWeight: 'bold'
