@@ -1,13 +1,17 @@
-import { View, Text, StyleSheet, Button } from "react-native"
+import { View, Text, StyleSheet, Button, Alert } from "react-native"
 
-const ThanhToan = () => {
+const ThanhToan = ({ soLuong, gia }) => {
+  const handlePay = () => {
+    Alert.alert('Thông báo', `Đồng ý thanh toán ${soLuong * gia}đ`)
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.totalPrice}>
         <Text style={styles.price}>Thành tiền</Text>
-        <Text style={styles.text}> 141800 đ</Text>
+        <Text style={styles.text}> {soLuong * gia} đ</Text>
       </View>
-      <Button title="TIẾN HÀNH ĐẶT HÀNG" color="red" />
+      <Button title="TIẾN HÀNH ĐẶT HÀNG" color="red" onPress={handlePay} />
     </View>
   )
 }

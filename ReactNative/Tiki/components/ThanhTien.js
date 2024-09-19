@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from "react-native"
 
-const ThanhTien = ({ tongTien }) => {
+const ThanhTien = ({ soLuong, gia }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.price}>Tạm tính</Text>
-      <Text style={styles.text}> 141800 đ</Text>
+      <Text style={styles.text}> {soLuong * gia} đ</Text>
     </View >
   )
 }

@@ -1,6 +1,6 @@
 import { Button, Dimensions, Image, StyleSheet, Text, TextInput, View } from "react-native"
 
-const ThongTinSach = ({ tenSach, nhaCungCap, giaCu, giaMoi }) => {
+const ThongTinSach = ({ tenSach, nhaCungCap, giaCu, giaMoi, soLuong, handleDecrease, handleIncrease }) => {
 
   const screenWidth = Dimensions.get('window').width;
 
@@ -17,9 +17,9 @@ const ThongTinSach = ({ tenSach, nhaCungCap, giaCu, giaMoi }) => {
           <Text style={styles.giaCu}>{giaCu} đ</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <View style={styles.soLuong}>
-              <Text style={styles.button}>-</Text>
-              <Text style={{ fontWeight: 'bold' }}>1</Text>
-              <Text style={styles.button}>+</Text>
+              <Text style={styles.button} onPress={handleDecrease}>-</Text>
+              <Text style={{ fontWeight: 'bold' }}>{soLuong}</Text>
+              <Text style={styles.button} onPress={handleIncrease}>+</Text>
             </View>
             <Text style={{ color: 'blue', fontWeight: 'bold' }}>Mua sau</Text>
           </View>
