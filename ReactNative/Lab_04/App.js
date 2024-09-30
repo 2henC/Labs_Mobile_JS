@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet,  View } from 'react-native';
+import { SafeAreaView, StyleSheet, View } from 'react-native';
 
 // You can import supported modules from npm
 import Header from './components/Header';
@@ -10,9 +10,9 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <View><Header/></View>
-      <View><Body/></View>
-      <View><Footer/></View>
+      <View><Header /></View>
+      <View><Body /></View>
+      <View><Footer /></View>
     </SafeAreaView>
   );
 }
