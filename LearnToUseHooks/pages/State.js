@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const randomDiceRoll = () => Math.floor(Math.random() * 6) + 1;
 
 
-const State = () => {
+const State = ({ navigation }) => {
   const [count, setCount] = useState(0);
   const [diceRoll, setDiceRoll] = useState([]);
   const [randomValue, setRandomValue] = useState(() => randomDiceRoll());
