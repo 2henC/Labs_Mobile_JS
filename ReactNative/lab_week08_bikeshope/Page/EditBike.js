@@ -7,7 +7,7 @@ export default function EditBike({ route, navigation }) {
   const { bikeId } = route.params;
   const dispatch = useDispatch();
 
-  const bike = useSelector((state) => 
+  const bike = useSelector((state) =>
     state.bike.bikes.find((b) => b.id === bikeId)
   );
 
@@ -24,13 +24,15 @@ export default function EditBike({ route, navigation }) {
   }, [bike]);
 
   const handleSave = () => {
-    dispatch(updateBike({
-      id: bikeId,
-      name,
-      price: parseFloat(price),
-      description,
-      image,
-    }));
+    dispatch(
+      updateBike({
+        id: bikeId,
+        name,
+        price: parseFloat(price),
+        description,
+        image,
+      })
+    );
     navigation.goBack();
   };
 
@@ -38,14 +40,9 @@ export default function EditBike({ route, navigation }) {
     <View style={styles.container}>
       <Text style={styles.header}>EDIT BIKE</Text>
 
-
       <Text style={styles.label}>Name:</Text>
-      <TextInput
-        style={styles.input}
-        value={name}
-        onChangeText={setName}
-      />
-      
+      <TextInput style={styles.input} value={name} onChangeText={setName} />
+
       <Text style={styles.label}>Price:</Text>
       <TextInput
         style={styles.input}
@@ -53,23 +50,25 @@ export default function EditBike({ route, navigation }) {
         onChangeText={setPrice}
         keyboardType="numeric"
       />
-      
+
       <Text style={styles.label}>Description:</Text>
       <TextInput
-        style={[styles.input, {height: 120, textAlignVertical: 'top'}]}
+        style={[styles.input, { height: 120, textAlignVertical: 'top' }]}
         value={description}
         onChangeText={setDescription}
         multiline
       />
-      
+
       <Text style={styles.label}>Image URL:</Text>
-      <TextInput
-        style={styles.input}
-        value={image}
-        onChangeText={setImage}
-      />
-      
-      <Button title="Save Changes" onPress={handleSave} />
+      <TextInput style={styles.input} value={image} onChangeText={setImage} />
+
+      <View style={{ marginBottom: 10 }}>
+        <Button title="Save Changes" onPress={handleSave} />
+      </View>
+
+      <View style={{ marginBottom: 10 }}>
+        <Button title="Cancel" onPress={() => navigation.goBack()} />
+      </View>
     </View>
   );
 }
@@ -83,7 +82,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'red'
+    color: 'red',
   },
   label: {
     fontSize: 16,
